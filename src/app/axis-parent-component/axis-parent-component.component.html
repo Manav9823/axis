@@ -1,0 +1,9 @@
+<div class="axis-view">
+  <div class="graph" #graphContainer draggable="true" (dragover)="allowDrop($event)">
+    <div class="x-axis"></div>
+    <div class="y-axis"></div>
+    <app-axis-view-component *ngFor="let point of points; let i = index" draggable="true" [x]="point.x" [y]="point.y" [id] = "point.id" [containerPosition] = "getContainerPosition()"
+      [graphContainer] = "graphContainer" (positionChanged)="onPositionChanged($event, i)"></app-axis-view-component>
+  </div>
+</div> 
+   

@@ -1,0 +1,10 @@
+.point {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  cursor: pointer;
+}
+.point.dragging {
+  opacity: 0;
+}   

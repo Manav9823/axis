@@ -1,0 +1,28 @@
+  .axis-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .graph {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+  }
+  .x-axis, .y-axis {
+    position: absolute;
+    background-color: #000;
+  }
+  
+  .x-axis {
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+  }
+  
+  .y-axis {
+    width: 2px;
+    height: 100%;
+    left: 0;
+  }
