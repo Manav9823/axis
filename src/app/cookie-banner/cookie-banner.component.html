@@ -1,0 +1,11 @@
+<div *ngIf="showCookieBanner" class="cookie-banner">
+<p-dialog [(visible)]="displayResponsive" [closable] = "false" [style]="{width: '60vw'}"    
+    [draggable]="false" [resizable]="false">
+    <p><b>Use of Cookies:</b><br> We utilize cookies to enhance your user experience by remembering your preferences and improving the app based on your usage
+    <br><br><b>Use of email address:</b><br>Your email address is collected to send app notifications for changes made by your team member and provide product 
+    related updates from thoughtflow</p>
+    <ng-template pTemplate="footer">
+    <p-button (click)="displayResponsive=false" (click) = "onAccept()" label="Accept and Continue" styleClass="custom-button"></p-button>
+    </ng-template>
+</p-dialog>
+</div>
